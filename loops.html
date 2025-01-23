@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //conditional statements
+        let age = 20;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+}
+//Code to execute if the condition is false
+  age = 16;
+
+if (age >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}
+//ternary operator
+// let age = 20;
+let status = (age >= 18) ? "Adult" : "Minor";
+console.log(status); 
+
+//initialization; condition; increment/decrement
+//for loop
+for (let i = 0; i < 5; i++) {
+  console.log("Iteration:", i);
+}
+//while loop
+let i = 0;
+
+while (i < 5) {
+  console.log("Iteration:", i);
+  i++;
+}
+//do while loop
+ // Code to execute
+ 
+ do {
+  console.log("Iteration:", i);
+  i++;
+} while (i < 5);
+
+//forEch
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(function(number, index) {
+  console.log("Index:", index, "Value:", number);
+});
+
+    </script>
+</body>
+</html>
