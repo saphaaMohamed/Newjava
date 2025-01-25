@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Regular Function
+function add(a, b) {
+  return a + b;
+}
+
+// Arrow Function
+const multiply = (a, b) => a * b;
+
+// Higher-Order Function
+function operate(operation, a, b) {
+  return operation(a, b);
+}
+
+console.log(operate(add, 2, 3)); 
+console.log(operate(multiply, 2, 3)); 
+    </script>
+    
+</body>
+</html>
