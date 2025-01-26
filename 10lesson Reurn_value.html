@@ -7,12 +7,47 @@
 </head>
 <body>
     <script>
- function add(a, b) {
-  return a + b; 
+//  function add(a, b) {
+//   return a + b; 
+// }
+
+// let result = add(2, 3);
+// console.log(result); 
+
+// Function with a return value
+function add(a, b) {
+  return a + b;
 }
 
-let result = add(2, 3);
-console.log(result); 
-    </script>
-</body>
+// Function returning an object
+function createUser(name, age) {
+  return { name, age };
+}
+
+// Function returning an array
+function createNumbers() {
+  return [1, 2, 3];
+}
+
+// Function returning another function
+function createMultiplier(multiplier) {
+  return function(number) {
+    return number * multiplier;
+  };
+}
+
+// Example usage
+let sum = add(2, 3);
+console.log(sum); // Output: 5
+
+let user = createUser("Alice", 25);
+console.log(user); // Output: { name: "Alice", age: 25 }
+
+let numbers = createNumbers();
+console.log(numbers); // Output: [1, 2, 3]
+
+let double = createMultiplier(2);
+console.log(double(5)); // Output: 10
+//     </script>
+// </body>
 </html>
