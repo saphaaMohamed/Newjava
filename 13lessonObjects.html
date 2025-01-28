@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //create new object
+        let person = {
+    name: "saphaa",  
+    age: 25,
+    isStudent: false
+};
+//using new object
+let car = new Object();
+car.brand = "Toyota";
+car.model = "Corolla";
+car.year = 2022;
+console.log(person);
+console.log(car);
+//using a constructor function
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+let person1 = new Person("saphaa", 30);
+//accessing object properties
+console.log(person.name);
+console.log(person["age"]);
+
+//modifying object properties
+person.age = 26; // Update existing property
+person.city = "New York"; // Add new property
+delete person.isStudent; // Remove a property
+// using for...in loop
+for (let key in person) {
+    console.log(key, person[key]);
+}
+// using object.keys() method
+Object.keys(person).forEach(key => console.log(key, person[key]));
+// object.entries() method
+Object.entries(person).forEach(([key, value]) => console.log(key, value));
+//adding methods to an object
+let user = {
+    name: "saphaa",
+    greet() {
+        console.log(`Hello, my name is ${this.name}`);
+    }
+};
+user.greet(); 
+//object destructuring
+
+let { name, age } = person;
+console.log(name, age);
+
+    </script>
+</body>
+</html>

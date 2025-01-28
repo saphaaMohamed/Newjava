@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+
+// Copying an array
+const copy = [...arr1];
+console.log(copy); 
+
+// Merging arrays
+const merged = [...arr1, ...arr2];
+console.log(merged); 
+//spread function
+function sum(a, b, c) {
+    return a + b + c;
+}
+
+const numbers = [2, 3, 4];
+console.log(sum(...numbers)); 
+
+// spread object
+const person = { name: "saphaa", age: 25 };
+const job = { title: "Developer", salary: 50000 };
+
+// Copying an object
+const copyPerson = { ...person };
+console.log(copyPerson);
+
+// Merging objects
+const employee = { ...person, ...job };
+console.log(employee); 
+//Rest  function
+function sumAll(...numbers) {
+    return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sumAll(1, 2, 3, 4)); 
+console.log(sumAll(10, 20));     
+
+    </script>
+</body>
+</html>
